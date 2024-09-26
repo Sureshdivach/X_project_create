@@ -1,0 +1,53 @@
+.child_second_container{
+    border: 1px solid rgb(241, 54, 54);
+    width: 60%;
+    margin: auto;
+
+    & .form-group{
+        background-color: rgb(114, 114, 114); 
+        border-radius: 20px;
+        position: sticky;
+        top: 0; 
+        z-index: 20;  
+        
+       & .form-control{
+        padding-left: 2.375rem;  
+        background-color: rgb(114, 114, 114);  
+        color: white; 
+        border: none;
+        padding: 0.7rem 2.4rem;
+        border-radius: 50px;      
+       }
+       & .form-control::placeholder{
+            color: #aaa;
+           
+        }
+        & .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            line-height: 2.5;
+            text-align: center;
+            pointer-events: none;
+            color: #aaa;
+           
+        
+        }      
+    }
+    
+  & .Subscribe ,& .Live_on_x{
+    border: 0.5px solid rgb(70, 70, 70);
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    & button{
+        background-color: rgb(0, 162, 255);
+        color: white;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        border: none;
+    }    
+  } 
+  
+}

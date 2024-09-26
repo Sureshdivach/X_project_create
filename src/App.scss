@@ -1,0 +1,9 @@
+.App {
+  background-color: black;
+  color: white;
+  font-size: large; 
+  display: grid; 
+  grid-template-rows: auto;
+  grid-template-columns: 500px auto auto;
+  grid-template-areas: "aside main main";
+    }

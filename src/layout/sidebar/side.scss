@@ -1,0 +1,182 @@
+.aside {
+  border: 1px solid rgb(95, 95, 95);
+  grid-area: aside;
+  color: white;
+  display: flex;  
+ & .firstaside{
+  width: 30%;
+  // border: 1px solid gray;
+ }
+   
+  & .asidefirst {      
+    width: 70%;   
+    padding: 1rem;     
+    align-items: end;
+    & h2 {
+      width: 50%;
+      padding: 0.5rem;
+      // text-align: center;
+    }
+    & li {
+      display: block;
+      margin-top: 0.2rem;
+      & button {
+        display: block;
+        color: white;
+        font-size: large;
+        background-color: black;
+        // border: 1px solid rgb(250, 49, 49);
+        border: none;
+        padding: 0.75rem;
+        border-radius: 20px;
+      }
+      & button:hover {
+        background-color: rgba(255, 255, 255, 0.329);
+      }
+    }
+    & .btn3 {
+      display: block;
+      color: white;
+      font-size: large;
+      background-color: black;
+      // border: 1px solid rgb(250, 49, 49);
+      border: none;
+      padding:0.75rem;
+      border-radius: 20px;
+    }
+    & .btn3:hover {
+      background-color: rgba(255, 255, 255, 0.329);
+    }
+    & .dropdown-menu {
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.452) 0px 54px 55px, rgba(0, 0, 0, 0.596) 0px -12px 30px, rgba(255, 254, 254, 0.12) 0px 4px 6px, rgba(185, 185, 185, 0.575) 0px 12px 13px, rgba(255, 255, 255, 0.527) 0px -3px 5px;
+
+      & a {
+        color: white;
+        font-size: large;
+      }
+      & a:hover {
+        color: white;
+        background-color: rgb(80, 79, 79);
+        font-size: large;
+      }
+    }
+    & .btn1 {
+      background-color: rgb(41, 170, 255);
+      padding: 0.5rem;
+      width: 75%;
+      margin: 0.8rem 1rem;
+      color: white;
+      border-radius: 30px;
+      border: none;
+    }
+    & .btn1:hover {
+      background-color: rgb(104, 152, 255);
+    }
+    & .modal-content {
+      background-color: rgb(2, 2, 2);
+      width: 100%;
+      text-align: left;
+      color: blue;
+      box-shadow: rgba(0, 0, 0, 0.452) 0px 54px 55px, rgba(0, 0, 0, 0.596) 0px -12px 30px, rgba(255, 254, 254, 0.12) 0px 4px 6px, rgba(185, 185, 185, 0.575) 0px 12px 13px, rgba(255, 255, 255, 0.527) 0px -3px 5px;
+      & .modal-header {
+        // border: 1px solid red;
+        color: blue;
+        display: flex;
+        font-size: large;
+        
+
+        justify-content: space-between;
+        & .btnclose {
+          color: blue;
+          font-size: x-large;
+          border: none;
+          background-color: rgb(2, 2, 2);
+        
+        }
+      }
+      & .modal-body {
+        padding: 1rem;
+        & img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+        }
+        & input {
+          border: none;
+          background-color: rgb(2, 2, 2);
+        }
+        & input:focus {
+          outline: none;
+          border: none;
+          color: rgb(255, 255, 255);
+        }
+        & p {
+          padding-bottom: 0;
+        }
+      }
+      & .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        & .icon {
+          width: 40%;
+          font-size: x-large;
+          display: flex;
+          justify-content: space-between;
+        }
+        & .btn2 {
+          background-color: rgb(73, 73, 250);
+          padding: 0.5rem;
+          width: 20%;
+          color: white;
+          border-radius: 30px;
+          border: none;
+        }
+      }
+      
+      
+    }
+    & .btn{     
+      // padding-left: -20px;
+      border: 1px solid rgb(20, 20, 20);
+      text-align: left;
+      margin: 5px;
+      padding: 0;
+      background-color: black;
+      
+      
+      & .container{
+        // border: 1px solid rgb(245, 0, 0);
+        // padding: 0.5rem;
+        // width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        line-height: 0;
+        & .col{
+          padding: 5px;
+          // border: 2px solid greenyellow;
+          align-content: center;
+                   
+        }
+        &  .col img{
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          align-items: center;
+        }
+      }
+    }
+    & .btn:hover{
+      background-color: gray;
+    }
+    & .dropdownlink{
+      list-style: none;
+      text-decoration: none;
+     
+     
+    }
+  }
+}
