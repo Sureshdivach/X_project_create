@@ -54,7 +54,7 @@ const liveObj = {
 }
 const LiveOnX=()=>{
     return(
-     <div className="Live_on w-100 p-0 mt-0 " >
+     <div className="Live_on w-100  p-0 mt-0 " >
         <h3>{liveObj.heading}</h3>
         {liveObj.Data.map(ele=>{
             return  <div class="d-flex justify-content-between w-100 p-0">
@@ -67,12 +67,18 @@ const LiveOnX=()=>{
             <div class="badge  text-wrap border border-3 border-danger rounded-pill  "  >
             <img src={ele.ProfileImg }  style={{width:"25px",height:"25px",borderRadius:"60px"}}alt=''/> <span class="font-size-1">{ele.live}</span>
           </div>
-                <div ></div>
+               <div ></div> 
             </div>
+
+
+
+
+            
         </div>
         })
         
     }
+     
 
      </div>
 

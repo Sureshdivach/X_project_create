@@ -1,6 +1,8 @@
 import { CiSearch } from "react-icons/ci";
 import "./mainSecond.scss";
-import LiveOnX from "../LiveOnX/LiveOnX";
+import LiveOnX from "./LiveOnX/LiveOnX";
+import WhatHappend from "./whats-Happend/WhatsHappend";
+import WhoFollow from "./who_to_Follow/WhoFollow";
 
 const MainSecond = () => {
   return (
@@ -18,6 +20,12 @@ const MainSecond = () => {
 </div>
 <div className="Live_on_x" >
     <LiveOnX/>
+</div>
+<div className="Whats_happend">
+  < WhatHappend/>
+</div>
+<div className="Who_to_follow">
+  <WhoFollow/>
 </div>
     </div>
   );

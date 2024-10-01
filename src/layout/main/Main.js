@@ -1,5 +1,5 @@
 import "./main.scss";
-import { Route,Routes } from "react-router-dom";
+import { Link, Route,Routes } from "react-router-dom";
 import { FaEarthAsia } from "react-icons/fa6";
 import { TbPhoto } from "react-icons/tb";
 import { MdOutlineGifBox } from "react-icons/md";
@@ -18,17 +18,19 @@ const Main = () => {
     <div className="main">
       {/* first container start------------------------------------------------------------ */}
       <div className="first_container">
+     
         <div class="container text-center">
           <div class="row align-items-start">
             <div class="col">
-              <a href="/Postdatapage" class="link-light">
+              <Link to="/Postdatapage"  class="link-light active
+              " >
                 For you
-              </a>
+              </Link>
             </div>
             <div class="col">
-              <a href="/followingpage " class="link-light ">
+              <Link to="/followingpage " class="link-light ">
                 Following
-              </a>
+              </Link>
             </div>
             </div>
         </div>
@@ -78,6 +80,7 @@ const Main = () => {
         <div className="Post_data_container">
           {/* <PostData/> */}
           <Routes>
+              <Route path="/" element={<PostData/>}/>
               <Route path="/Postdatapage" element={<PostData/>}/>
               <Route path="/followingpage" element={<FollowData/>}/>
               </Routes>
