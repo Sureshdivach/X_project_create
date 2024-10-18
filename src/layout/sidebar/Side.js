@@ -19,21 +19,24 @@ import { RiMapPinLine } from "react-icons/ri";
 import { HiOutlineBars2, HiOutlineWallet} from "react-icons/hi2";
 import { IoMdLock } from "react-icons/io";
 
+import LinkList from "../../common/Linklist/LinkList";
+
 
 const sidebarData = {
+ 
   heading: <FaXTwitter/>,
   arr: [
-    { icon: <GoHome />, label: "Home" },
-    { icon: <FaSearch />, label: "Explore" },
-    { icon: <GrNotification />, label: "Notifications" },
-    { icon: <CiMail />, label: "Messages" },
-    { icon: <BsSlashSquare />, label: "Grok" },
-    { icon: <BiBookmark />, label: "Bookmarks" },
-    { icon: <LiaToolboxSolid />, label: "Jobs" },
-    { icon: <IoPeople />, label: "Communities" },
-    { icon: <FaXTwitter />, label: "Premium" },
-    { icon: <BsLightningCharge />, label: "Verified Orgs" },
-    { icon: <IoPersonOutline />, label: "Profile" },
+    {id:"", icon: <GoHome />, label: "Home" },
+    { id:"explore", icon: <FaSearch />, label: "Explore" },
+    {id:"notification", icon: <GrNotification/>, label: "Notifications" },
+    { id:"Message",icon: <CiMail />, label: "Messages" },
+    {id:"Grok", icon: <BsSlashSquare />, label: "Grok" },
+    { id:"Bookmark",icon: <BiBookmark />, label: "Bookmarks" },
+    { id:"Jobs",icon: <LiaToolboxSolid />, label: "Jobs" },
+    {id:"Communities", icon: <IoPeople />, label: "Communities" },
+    { id:"Premium",icon: <FaXTwitter />, label: "Premium" },
+   {id:"Verified Orgs", icon: <BsLightningCharge />, label: "Verified Orgs" },
+    {id:"Profile", icon: <IoPersonOutline />, label: "Profile" },
     
   ],
   more:[
@@ -54,20 +57,23 @@ const sidebarData = {
 };
 
 const Side = () => {
+
   return (
     <div className="aside">
       <div className="firstaside"></div>
       <div className="asidefirst">
         <h2>{sidebarData.heading}</h2>
-        {sidebarData.arr.map((ele) => {
-          return (
+        
+        {/* {sidebarData.arr.map((ele) => {
+          return ( */}
             <li>
-              <button>
+<LinkList linkArr={sidebarData.arr} containerclass={"asidefirst"} linkClass={`button `}/>
+              {/* <Link to={"ele.id"}>
                 {ele.icon} &nbsp;{ele.label}
-              </button>
+              </Link> */}
             </li>
-          );
-        })}
+          {/* );
+        })} */}
 
         <div class="dropup-right dropup">
           <button

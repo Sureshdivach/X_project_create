@@ -1,0 +1,43 @@
+.Book_main_cont{
+    // border: 1px solid gray;
+
+    & .book_nav{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: black;
+    & .uper_book_cont{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        line-height: 0;
+    }
+
+    & .search_cont{
+        border: 1px solid rgb(59, 59, 59);
+        border-radius: 30px;
+        width: 98%;
+        margin: auto;
+        padding: 0.5rem;
+
+        & input{
+            background-color: black;
+            outline: none;
+            border: none;
+            color: white;
+            // padding: 0.5rem;
+        }
+
+       
+    }
+    & .search_cont:active, & .search_cont:focus{
+        border-color: aqua;
+    }
+}
+
+
+& .book_post_container{
+    margin-top: 30px;
+}
+}

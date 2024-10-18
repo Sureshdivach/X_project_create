@@ -1,0 +1,17 @@
+.allMain_cont{
+    
+    display: flex;
+    justify-content: space-between;
+   margin-top: 0;
+
+    & .icon_cont{
+     width: 6%;
+     padding: 5px;
+     color: rgb(233, 80, 80);
+    }
+    & .content_noti_cont{
+    width: 95%;
+    // border: 1px solid gray;
+    padding: 5px;
+    }
+}

@@ -1,0 +1,53 @@
+#pills-tabContent{
+
+    & .img_cont{
+        background-image: url(https://deadline.com/wp-content/uploads/2024/09/Combo-Perfomers-Graphic_16x9_static.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 0;
+      & h5{
+        position: absolute;
+        bottom: 2rem;
+      }
+      & p{
+        position: absolute;
+        bottom: 0;
+        }
+    }
+
+
+  
+
+
+
+
+
+& .expl_video_cont{
+    // border: 1px solid gray;
+    // overflow: auto;
+    width: 100%;
+    // scrollbar-width: none;
+
+    & .video_cont{
+        // border: 1px solid gray;
+        width: 100%;       
+        display: flex;
+        gap:10px;
+        height: 250px;
+        & .expl_video_cont{
+            border-radius: 20px;
+            width: 100%;
+            overflow: auto;
+            scrollbar-width: none;
+            & video{
+            width: 100%;
+           
+               
+                
+               }
+        }
+      
+    }
+}
+}  
